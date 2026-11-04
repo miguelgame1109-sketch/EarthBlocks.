@@ -1,0 +1,93 @@
+
+body {
+    margin: 0;
+    background: #eeeeee;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+.topbar {
+    background: #00ffff;
+    color: white;
+    padding: 12px 25px;
+    border-bottom: 4px solid #0017e2;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.topbar h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.topbar span {
+    font-size: 14px;
+}
+
+.container {
+    background: white;
+    width: 380px;
+    margin: 55px auto;
+    padding: 25px;
+    border: 1px solid #aaaaaa;
+    box-shadow: 0 2px 5px #cccccc;
+}
+
+h2 {
+    color: #000000;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #999999;
+}
+
+button {
+    margin-top: 22px;
+    width: 100%;
+    padding: 12px;
+    background: #0616f5;
+    color: white;
+    border: 1px solid #25466b;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #294d75;
+}
+
+.message {
+    background: #eeeeee;
+    border: 1px solid #bbbbbb;
+    padding: 10px;
+    margin: 12px 0;
+}
+
+.login {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+a {
+    color: #315f94;
+}
+
+footer {
+    text-align: center;
+    color: #777777;
+    font-size: 12px;
+}

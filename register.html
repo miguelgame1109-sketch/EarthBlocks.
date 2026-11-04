@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register - EARTHBLOCKS login</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+<div class="topbar">
+    <h1>EARTHBLOCKS</h1>
+    <span>Games | Catalog | Register</span>
+</div>
+
+<div class="container">
+
+    <h2>Create Your Account</h2>
+
+    <p>Join EARTHBLOCKS and start building!</p>
+
+    <% if message then %>
+        <div class="message"><%= message %></div>
+    <% end %>
+
+    <form action="/register" method="POST">
+
+        <label>Username</label>
+        <input
+            type="text"
+            name="username"
+            placeholder="Choose a username"
+            required
+        >
+
+        <label>Password</label>
+        <input
+            type="password"
+            name="password"
+            placeholder="Create a password"
+            required
+        >
+
+        <label>Confirm Password</label>
+        <input
+            type="password"
+            name="confirm"
+            placeholder="Enter password again"
+            required
+        >
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <p class="login">
+        Already have an account?
+        <a href="/login">Login</a>
+    </p>
+
+</div>
+
+<footer>
+    EARTHBLOCKS 2027
+</footer>
+
+</body>
+</html>

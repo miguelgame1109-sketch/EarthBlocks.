@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= username %> - Earthblocks profile</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+<div class="topbar">
+    <h1>BlockWorld</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/register">Register</a>
+        <a href="/profile/Builder2007">Profile</a>
+    </nav>
+</div>
+
+<div class="profile-container">
+
+    <div class="profile-header">
+        <h2>Earthblocks</h2>
+        <p>Welcome to Earthblocks!</p>
+    </div>
+
+    <div class="profile-content">
+
+        <div class="avatar-box">
+            <div class="avatar">
+                <span>?</span>
+            </div>
+
+            <h3><%= username %></h3>
+            <p class="online">● Offline</p>
+        </div>
+
+        <div class="profile-information">
+
+            <div class="profile-box">
+                <h3>About Me</h3>
+                <p><%= description %></p>
+            </div>
+
+            <div class="profile-box">
+                <h3>Statistics</h3>
+                <p>Username: <%= username %></p>
+                <p>Join Date: <%= join_date %></p>
+                <p>Friends: 3</p>
+            </div>
+
+            <div class="profile-box">
+                <h3>Friends</h3>
+
+                <% for _, friend in ipairs(friends) do %>
+                    <div class="friend">
+                        <span class="small-avatar">?</span>
+                        <a href="/profile/<%= friend %>">
+                            <%= friend %>
+                        </a>
+                    </div>
+                <% end %>
+            </div>
+
+            <div class="profile-box">
+                <h3>My Games</h3>
+
+                <% for _, game in ipairs(games) do %>
+                    <div class="game">
+                        <span class="game-icon">▣</span>
+                        <%= game %>
+                    </div>
+                <% end %>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    Earthblocks 2027
+</footer>
+
+</body>
+</html>
